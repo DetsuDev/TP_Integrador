@@ -40,9 +40,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Coin.h" />
+		<Unit filename="include/Collisionable.h" />
+		<Unit filename="include/Enemy.h" />
 		<Unit filename="include/Player.h" />
+		<Unit filename="include/Projectile.h" />
+		<Unit filename="include/Rat.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Coin.cpp" />
+		<Unit filename="src/Collisionable.cpp" />
+		<Unit filename="src/Enemy.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Projectile.cpp" />
+		<Unit filename="src/Rat.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

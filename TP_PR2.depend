@@ -1,7 +1,14 @@
 # depslib dependency file v1.0
-1728799527 source:d:\users\tomi\desktop\proyecto\tp_pr2\main.cpp
+1731364215 source:d:\users\tomi\desktop\proyecto\tp_pr2\main.cpp
 	<SFML/Graphics.hpp>
+	<stdlib.h>
+	<ctime>
+	<sstream>
+	<string>
 	"Player.h"
+	"Coin.h"
+	"Enemy.h"
+	"Rat.h"
 
 1525812018 d:\users\tomi\desktop\proyecto\tp_pr2\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -412,9 +419,58 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1728799706 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\player.cpp
+1731363988 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\player.cpp
+	"Player.h"
+	"Projectile.h"
+
+1731363987 d:\users\tomi\desktop\proyecto\tp_pr2\include\player.h
+	<SFML\Graphics.hpp>
+	<vector>
+	"Collisionable.h"
+	"Projectile.h"
+
+1731275017 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\coin.cpp
+	"Coin.h"
+
+1730820105 d:\users\tomi\desktop\proyecto\tp_pr2\include\coin.h
+	<SFML\Graphics.hpp>
+	"Collisionable.h"
+
+1729796174 d:\users\tomi\desktop\proyecto\tp_pr2\include\item.h
+	<SFML\Graphics.hpp>
+
+1730820217 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\collisionable.cpp
+	"Collisionable.h"
+
+1730819874 d:\users\tomi\desktop\proyecto\tp_pr2\include\collisionable.h
+	<SFML/Graphics.hpp>
+
+1731364415 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\enemy.cpp
+	"Enemy.h"
+	"Projectile.h"
+	"Player.h"
+	<algorithm>
+	<cmath>
+
+1731364422 d:\users\tomi\desktop\proyecto\tp_pr2\include\enemy.h
+	<SFML\Graphics.hpp>
+	"Collisionable.h"
+	"Projectile.h"
 	"Player.h"
 
-1728799697 d:\users\tomi\desktop\proyecto\tp_pr2\include\player.h
-	<SFML\Graphics.hpp>
+1731127985 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\projectile.cpp
+	"Projectile.h"
+
+1731360534 d:\users\tomi\desktop\proyecto\tp_pr2\include\projectile.h
+	"Collisionable.h"
+	<SFML/Graphics.hpp>
+
+1731363791 d:\users\tomi\desktop\proyecto\tp_pr2\include\rat.h
+	"Enemy.h"
+
+1731364023 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\rat.cpp
+	"Enemy.h"
+	"Rat.h"
+	<algorithm>
+	<cmath>
 
