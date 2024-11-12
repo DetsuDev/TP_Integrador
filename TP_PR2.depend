@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1731364215 source:d:\users\tomi\desktop\proyecto\tp_pr2\main.cpp
+1731447198 source:d:\users\tomi\desktop\proyecto\tp_pr2\main.cpp
 	<SFML/Graphics.hpp>
 	<stdlib.h>
 	<ctime>
 	<sstream>
 	<string>
+	<vector>
 	"Player.h"
 	"Coin.h"
 	"Enemy.h"
@@ -445,14 +446,15 @@
 1730819874 d:\users\tomi\desktop\proyecto\tp_pr2\include\collisionable.h
 	<SFML/Graphics.hpp>
 
-1731364415 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\enemy.cpp
+1731447239 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\enemy.cpp
+	<iostream>
 	"Enemy.h"
 	"Projectile.h"
 	"Player.h"
 	<algorithm>
 	<cmath>
 
-1731364422 d:\users\tomi\desktop\proyecto\tp_pr2\include\enemy.h
+1731447288 d:\users\tomi\desktop\proyecto\tp_pr2\include\enemy.h
 	<SFML\Graphics.hpp>
 	"Collisionable.h"
 	"Projectile.h"
@@ -468,7 +470,7 @@
 1731363791 d:\users\tomi\desktop\proyecto\tp_pr2\include\rat.h
 	"Enemy.h"
 
-1731364023 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\rat.cpp
+1731447292 source:d:\users\tomi\desktop\proyecto\tp_pr2\src\rat.cpp
 	"Enemy.h"
 	"Rat.h"
 	<algorithm>

@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Enemy.h"
 #include "Projectile.h"
 #include "Player.h"
@@ -9,6 +10,7 @@ Enemy::Enemy()
     _texture.loadFromFile("assets/textures/enemy.png");
     _sprite.setTexture(_texture);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2,_sprite.getGlobalBounds().height/2);
+
 }
 
 void Enemy::draw(sf::RenderTarget& target, sf::RenderStates states) const
@@ -16,7 +18,12 @@ void Enemy::draw(sf::RenderTarget& target, sf::RenderStates states) const
     target.draw(_sprite, states);
 }
 
+
 void Enemy::hurt(){
+    _health--;
+    isDead();
+    std::cout << "Enemy hurt, health: " << _health << std::endl;
+
 
 }
 bool Enemy::isCollision(std::vector<Projectile>& projectiles)
@@ -32,11 +39,15 @@ bool Enemy::isCollision(std::vector<Projectile>& projectiles)
     return false;  // Si no hubo colisión, retornamos false
 }
 
-void Enemy::dies(){
+bool Enemy::isDead(){
+
+    std::cout << "Checking if dead: " << (_health) << std::endl;
     if (_health < 1)
-        {
-        delete this;
-        }
+    {
+        return true;
+    }
+    return false;
+    //return _health < 1;
 }
 
 sf::FloatRect Enemy::getBounds() const

@@ -8,20 +8,23 @@ Rat::Rat()
     _texture.loadFromFile("assets/textures/rat.png");
     _timeRespawn = 60;
     _health = 3;
+
+    // Aplica el valor aleatorio a la escala del sprite
+    _sprite.setScale(scaleFactor, scaleFactor);
     respawn();
 }
 
 
 void Rat::respawn()
 {
-    _sprite.setPosition(32 + _sprite.getGlobalBounds().width, 16 + _sprite.getGlobalBounds().height);
+    _sprite.setPosition(32 + _sprite.getGlobalBounds().width, 32 + _sprite.getGlobalBounds().height);
     //_sprite.setPosition(std::rand()%500 + _sprite.getGlobalBounds().width, std::rand()%400 + _sprite.getGlobalBounds().height);
 
 }
 
 void Rat::update(Player& player)
 {
-    //Enemy::update(player);  // Llama a la función update base si deseas extender el comportamiento
+    //Rat::update(player);  // Llama a la función update base si deseas extender el comportamiento
     _timeRespawn--;
     if (_timeRespawn<0)
     {
@@ -44,5 +47,7 @@ void Rat::update(Player& player)
 
         // Movemos al enemigo hacia el jugador
         _sprite.move(direction * 3.5f);  // 5.0f es la velocidad de movimiento, ajusta si es necesario
+
+
     }
 }
